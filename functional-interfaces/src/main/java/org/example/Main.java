@@ -6,14 +6,18 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-
+        //Task1 data setup
         List<String> emaiList = new ArrayList<>();
         emaiList.add("simon.morgan@northcoders.com");
         emaiList.add("chris.ward@northcoders.com");
         emaiList.add("info@stackoverflow.com");
         emaiList.add("hannah.montana@mileycyrus.com");
-
-        emaiList.stream().forEach(Challenge1.printAtSignIndex);
+        //task1 invoke
+        emaiList.forEach(Challenge1.printAtSignIndex);
+        //task2 invoke
+        System.out.println(Challenge1.listofEmails.get());
+        //task3 invoke
+        emaiList.forEach(Challenge1.lengthOfEmailIsFive);
 
     }
 }
