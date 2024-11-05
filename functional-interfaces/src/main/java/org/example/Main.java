@@ -46,5 +46,18 @@ public class Main {
         //Challenge 8 Invoke
         Challenge8.compareLists.accept(list1, list2);
 
+
+        //Challenge 9 invoke
+        System.out.println("Challenge 9: ");
+        System.out.println(".co.uk emails:");
+        Challenge9.emailSorter.apply(Challenge9.emailList, Challenge9.isUkDomain).forEach(System.out::println);
+        System.out.println();
+        System.out.println(".com emails:");
+        Challenge9.emailSorter.apply(Challenge9.emailList, Challenge9.isDotCom).forEach(System.out::println);
+        System.out.println();
+        System.out.println("invalid emails:");
+        Challenge9.emailSorter.apply(Challenge9.emailList, Challenge9.isValidEmail).forEach(System.out::println);
+
+
     }
 }
