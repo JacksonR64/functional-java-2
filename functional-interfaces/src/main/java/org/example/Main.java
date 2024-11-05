@@ -3,6 +3,7 @@ package org.example;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,6 +19,11 @@ public class Main {
         System.out.println(Challenge1.listofEmails.get());
         //task3 invoke
         emaiList.forEach(Challenge1.lengthOfEmailIsFive);
+        //task4 invoke
+        //what is the side effect of calling functional interface with an instance vs Static invocation?
+        Challenge4 challenge4 = new Challenge4();
+        emaiList.forEach(challenge4.printUserName);
+        //emaiList.forEach(Challenge4.printUserName);
 
     }
 }
