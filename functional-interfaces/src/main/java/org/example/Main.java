@@ -1,10 +1,8 @@
 package org.example;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
-import java.util.function.Consumer;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,9 +17,9 @@ public class Main {
         //task2 invoke
         System.out.println(Challenge1.listofEmails.get());
         //task3 invoke
-        emaiList.forEach(Challenge1.lengthOfEmailIsFive);
+        emaiList.forEach(Challenge1.lengthOfEmailIsOverFive);
         //task4 invoke
-        //what is the side effect of calling functional interface with an instance vs Static invocation?
+        //what is the side effect of calling functional interface impl with an instance vs Static invocation?
         Challenge4 challenge4 = new Challenge4();
         emaiList.forEach(challenge4.printUserName);
         //emaiList.forEach(Challenge4.printUserName);
@@ -31,8 +29,8 @@ public class Main {
         nameAndAgeMap.put("John",25);
         nameAndAgeMap.put("Donna",27);
         nameAndAgeMap.put("Piyush",22);
-        Challenge5 challenge5 = new Challenge5();
-        nameAndAgeMap.forEach(challenge5.greetUser);
+        //Challenge5 challenge5 = new Challenge5();
+        nameAndAgeMap.forEach(Challenge5.greetUser);
 
     }
 }
